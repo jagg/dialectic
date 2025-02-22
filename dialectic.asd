@@ -5,7 +5,9 @@
   :depends-on ()
   :components ((:module "src"
                 :components
-                ((:file "main"))))
+                ((:file "main" :depends-on ("utilities"))
+                 (:file "utilities")
+                 )))
   :description ""
   :in-order-to ((test-op (test-op "dialectic/tests"))))
 
